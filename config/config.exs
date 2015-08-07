@@ -7,6 +7,7 @@ use Mix.Config
 
 # Configures the endpoint
 config :hello_phoenix, HelloPhoenix.Endpoint,
+  pool: Ecto.Adapters.SQL.Sandbox,
   url: [host: "localhost"],
   root: Path.dirname(__DIR__),
   secret_key_base: "GWoQ1xiWvUt8NfhtpLPGk1RZVJsdo7fcJadFwtu+Ah3QOxEpILvbHGZuEng35i5g",
